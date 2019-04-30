@@ -19,7 +19,7 @@ public class AngryProgressBarUi extends BasicProgressBarUI {
         int w = progressBar.getWidth();
         int h = progressBar.getPreferredSize().height;
         Graphics2D g = (Graphics2D) g2d;
-        g.setColor(uglyColors.nextUglyColorChanedIf(uglyTiming::isExceeded));
+        g.setColor(uglyColors.nextUglyColorChangedIf(uglyTiming::isExceeded));
         g.fillRect(0, 0, w, h);
         return;
     }
@@ -29,7 +29,7 @@ public class AngryProgressBarUi extends BasicProgressBarUI {
         int w = progressBar.getWidth();
         int h = progressBar.getPreferredSize().height;
         Graphics2D g = (Graphics2D) g2d;
-        g.setColor(uglyColors.nextUglyColorChanedIf(uglyTiming::isExceeded));
+        g.setColor(uglyColors.nextUglyColorChangedIf(uglyTiming::isExceeded));
         g.fillRect(0, 0, w, h);
         return;
     }

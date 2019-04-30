@@ -25,7 +25,7 @@ public class UglyColors {
         currentUglyColor = nextUglyColor();
     }
 
-    public Color nextUglyColorChanedIf(Supplier<Boolean> predicate) {
+    public Color nextUglyColorChangedIf(Supplier<Boolean> predicate) {
         if (predicate.get()) {
             currentUglyColor = nextUglyColor();
         }
