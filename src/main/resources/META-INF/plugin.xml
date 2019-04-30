@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>org.shit.angry-progress-bar</id>
+    <name>Angry progress bar</name>
+    <vendor email="dummy" url="dummy">dummy</vendor>
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <description><![CDATA[
+    Angry progress bar lives here
+    ]]></description>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <application-components>
+        <component>
+            <implementation-class>AngryProgressBarApplicationComponent</implementation-class>
+        </component>
+    </application-components>
+</idea-plugin>
