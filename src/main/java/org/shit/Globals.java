@@ -1,7 +1,9 @@
 package org.shit;
 
 interface Globals {
-    UglyTiming uglyTiming = new UglyTiming();
+    UglyTimingGenerator uglyTiming = new UglyTimingGenerator();
 
-    UglyColors uglyColors = new UglyColors();
+    UglyColorsGenerator uglyColors = new UglyColorsGenerator();
+
+    PositionedUglyPhraseGenerator uglyPhrases = new PositionedUglyPhraseGenerator();
 }

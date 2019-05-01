@@ -4,11 +4,11 @@ import com.google.common.base.Stopwatch;
 
 import java.util.concurrent.TimeUnit;
 
-public class UglyTiming {
+public class UglyTimingGenerator {
 
     Stopwatch stopwatch;
 
-    public UglyTiming() {
+    public UglyTimingGenerator() {
         stopwatch = Stopwatch.createStarted();
     }
 

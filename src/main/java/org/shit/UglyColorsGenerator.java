@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.function.Supplier;
 
-public class UglyColors {
+public class UglyColorsGenerator {
 
     private final ArrayList<Color> theColors;
 
@@ -15,7 +15,7 @@ public class UglyColors {
 
     private Color currentUglyColor;
 
-    public UglyColors() {
+    public UglyColorsGenerator() {
         theColors = Lists.newArrayList(
                 hex2Rgb("#A805FA"),
                 hex2Rgb("#FF9D00"),
