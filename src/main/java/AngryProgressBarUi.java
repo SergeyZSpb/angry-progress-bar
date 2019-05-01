@@ -16,21 +16,21 @@ public class AngryProgressBarUi extends BasicProgressBarUI {
 
     @Override
     protected void paintIndeterminate(Graphics g2d, JComponent c) {
-        int w = progressBar.getWidth();
-        int h = progressBar.getPreferredSize().height;
-        Graphics2D g = (Graphics2D) g2d;
-        g.setColor(uglyColors.nextUglyColorChangedIf(uglyTiming::isExceeded));
-        g.fillRect(0, 0, w, h);
-        return;
+        doPaint((Graphics2D) g2d, (JProgressBar)c);
     }
 
     @Override
-    protected void paintDeterminate(Graphics g2d, JComponent c) {
-        int w = progressBar.getWidth();
-        int h = progressBar.getPreferredSize().height;
-        Graphics2D g = (Graphics2D) g2d;
-        g.setColor(uglyColors.nextUglyColorChangedIf(uglyTiming::isExceeded));
-        g.fillRect(0, 0, w, h);
+    protected void paintDeterminate(Graphics g2d, JComponent D) {
+        doPaint((Graphics2D) g2d, (JProgressBar) D);
+        return;
+    }
+
+    private void doPaint(Graphics2D g2d, JProgressBar c) {
+        int w = c.getWidth();
+        int h = c.getPreferredSize().height;
+        g2d.setPaint(uglyColors.nextUglyColorChangedIf(uglyTiming::isExceeded));
+        g2d.fillRect(0, 0, w, h);
+        c.updateUI();
         return;
     }
 }
