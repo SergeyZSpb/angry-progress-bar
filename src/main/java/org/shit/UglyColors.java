@@ -1,3 +1,5 @@
+package org.shit;
+
 import com.google.common.collect.Lists;
 
 import java.awt.*;

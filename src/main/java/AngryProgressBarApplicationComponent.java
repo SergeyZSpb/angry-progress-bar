@@ -3,6 +3,7 @@ import com.intellij.ide.ui.LafManagerListener;
 import com.intellij.ide.ui.laf.LafManagerImpl;
 import com.intellij.openapi.components.ApplicationComponent;
 import org.jetbrains.annotations.NotNull;
+import org.shit.AngryProgressBarUi;
 
 import javax.swing.*;
 

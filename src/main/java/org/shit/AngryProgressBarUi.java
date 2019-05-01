@@ -1,3 +1,5 @@
+package org.shit;
+
 import com.intellij.util.ui.JBUI;
 
 import javax.swing.*;
@@ -5,10 +7,11 @@ import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.basic.BasicProgressBarUI;
 import java.awt.*;
 
-public class AngryProgressBarUi extends BasicProgressBarUI {
-    UglyColors uglyColors = new UglyColors();
-    UglyTiming uglyTiming = new UglyTiming();
+import static org.shit.Globals.uglyColors;
+import static org.shit.Globals.uglyTiming;
 
+
+public class AngryProgressBarUi extends BasicProgressBarUI {
     public static ComponentUI createUI(JComponent c) {
         c.setBorder(JBUI.Borders.empty().asUIResource());
         return new AngryProgressBarUi();
